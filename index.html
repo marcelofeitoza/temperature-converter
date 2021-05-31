@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Temperature converter</title>
+</head>
+<body>
+  
+  <div class="converter">
+
+    <h1>Temperature Converter</h1>
+    <div>
+      <input type="number" name="temp1" id="temp1" min="-99999" max="99999"> 
+      <select name="temp1scale" id="temp1scale">
+        <option value="celsius">Celsius</option>
+        <option value="farenheit">Farenheit</option>
+        <option value="kelvin">Kelvin</option> 
+      </select> 
+      
+      <br><br>
+
+      <select name="temp2scale" id="temp2scale">
+        <option value="farenheit">Farenheit</option>
+        <option value="kelvin">Kelvin</option> 
+        <option value="celsius">Celsius</option>
+      </select> 
+      <input type="number" name="temp2" id="temp2" min="-99999" max="99999">
+    </div>
+
+    <br>
+
+    <button id="submitButton" type="submit">Convert</button>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
